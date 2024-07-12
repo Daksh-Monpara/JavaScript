@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>rendom quotes</title>
+</head>
+
+<body>
+    <script>
+        let x = parseInt(prompt("Enter value for x"));
+        let y = parseInt(prompt("Enter value for y"));
+
+        let ans = x / y;
+
+        try {
+
+            if (y == 0) {
+                throw ("cant divide 0..!");
+            }
+            else if (isNaN(x) || y == isNaN(y)) {
+                console.error("error..! havent entared any number....")
+            }
+            else {
+                console.log(`ans=${ans}`);
+            }
+        }
+        catch (err) {
+            console.error(err);
+        }
+    </script>
+</body>
+
+</html>
