@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find gross salary</title>
+</head>
+
+<body>
+    <table width="500px" cellpadding="2" border="1">
+        <tr>
+            <td>Salary : </td>
+            <td id="SAL"></td>
+        </tr>
+        <tr>
+            <td>Total Salary : </td>
+            <td id="ANS"></td>
+        </tr>
+    </table>
+
+    <script>
+
+        let a = parseFloat(prompt("Enter the Salary:"));
+        sal = a + (a * 0.10) + (a * 0.05) + (a * 0.08);
+
+        document.getElementById("SAL").innerHTML = a;
+        document.getElementById("ANS").innerHTML = sal;
+
+    </script>
+
+</body>
+
+</html>
